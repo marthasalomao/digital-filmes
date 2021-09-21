@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CadastroViewController: UIViewController {
+class SignUpViewController: UIViewController {
 
     @IBOutlet weak var finalizarButton: UIButton!
     

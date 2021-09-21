@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class InitialViewController: UIViewController {
 
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var passButton: UIButton!
@@ -18,14 +18,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.loginButton.layer.borderWidth = 2
-        self.loginButton.layer.borderColor = UIColor.white.cgColor
-        self.loginButton.layer.cornerRadius = 20
-        self.passButton.layer.borderWidth = 2
-        self.passButton.layer.borderColor = UIColor.white.cgColor
-        self.passButton.layer.cornerRadius = 20
+        self.loginButton?.layer.borderWidth = 2
+        self.loginButton?.layer.borderColor = UIColor.white.cgColor
+        self.loginButton?.layer.cornerRadius = 20
+        self.passButton?.layer.borderWidth = 2
+        self.passButton?.layer.borderColor = UIColor.white.cgColor
+        self.passButton?.layer.cornerRadius = 20
         
-        self.backgroundImage.layer.opacity = 8.0
+        self.backgroundImage?.layer.opacity = 8.0
         
         self.navigationController?.navigationBar.isHidden = true
     }

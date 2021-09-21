@@ -1,5 +1,5 @@
 //
-//  playlistViewController.swift
+//  perfilUsuarioViewController.swift
 //  DigitalFilmes
 //
 //  Created by Mariana Eri Massaki on 02/09/21.
@@ -7,16 +7,19 @@
 
 import UIKit
 
-class playlistViewController: UIViewController {
+class UserProfileViewController: UIViewController {
     
     @IBOutlet weak var myTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.myTableView.register(UINib(nibName: "apresentacaoFilme", bundle: nil), forCellReuseIdentifier: "apresentacaoFilme")
+        self.myTableView.register(UINib(nibName: "playlistPerfilCell", bundle: nil), forCellReuseIdentifier: "playlistPerfilCell")
         
         self.myTableView.delegate = self
         self.myTableView.dataSource = self
+        
+        
         
         // Do any additional setup after loading the view.
     }
@@ -34,18 +37,19 @@ class playlistViewController: UIViewController {
     
 }
 
-extension playlistViewController: UITableViewDelegate, UITableViewDataSource {
+extension UserProfileViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        
+        return 1
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let apresentacaoFilme = tableView.dequeueReusableCell(withIdentifier: "apresentacaoFilme", for: indexPath)
+        let playlistPerfilCell = tableView.dequeueReusableCell(withIdentifier: "playlistPerfilCell", for: indexPath)
         
-        return apresentacaoFilme
+        
+        return playlistPerfilCell
+        
     }
-    
-    
     
 }

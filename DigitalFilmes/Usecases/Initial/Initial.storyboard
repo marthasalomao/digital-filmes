@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Initial View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="InitialViewController" customModule="DigitalFilmes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="9VD-np-80Z">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Destaque-Netflix-8-1200x1200" translatesAutoresizingMaskIntoConstraints="NO" id="GQt-cJ-0ey">
+                                        <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gkG-c7-rpv">
+                                        <rect key="frame" x="65" y="536" width="284" height="46"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgg-Qz-sPu">
+                                        <rect key="frame" x="65" y="600" width="284" height="46"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                                        <state key="normal" title="Cadastre-se">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l22-fM-Dkc">
+                                        <rect key="frame" x="65" y="364" width="284" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="hYZ-Ew-hRz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l5Z-X0-bxe">
+                                        <rect key="frame" x="65" y="431" width="284" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="h1d-v7-DZM"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="EuF-Zn-IHv"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Xgg-Qz-sPu" firstAttribute="leading" secondItem="EuF-Zn-IHv" secondAttribute="leading" constant="65" id="0jt-yj-tAF"/>
+                                    <constraint firstItem="gkG-c7-rpv" firstAttribute="leading" secondItem="EuF-Zn-IHv" secondAttribute="leading" constant="65" id="6tv-eD-WXB"/>
+                                    <constraint firstItem="EuF-Zn-IHv" firstAttribute="trailing" secondItem="l22-fM-Dkc" secondAttribute="trailing" constant="65" id="PLQ-Kk-Flo"/>
+                                    <constraint firstItem="l5Z-X0-bxe" firstAttribute="top" secondItem="l22-fM-Dkc" secondAttribute="bottom" constant="27" id="PbN-D5-oLC"/>
+                                    <constraint firstItem="EuF-Zn-IHv" firstAttribute="trailing" secondItem="l5Z-X0-bxe" secondAttribute="trailing" constant="65" id="VSm-Fz-9ky"/>
+                                    <constraint firstItem="GQt-cJ-0ey" firstAttribute="leading" secondItem="EuF-Zn-IHv" secondAttribute="leading" id="Z2U-Rv-TZv"/>
+                                    <constraint firstItem="l22-fM-Dkc" firstAttribute="leading" secondItem="EuF-Zn-IHv" secondAttribute="leading" constant="65" id="bPQ-8w-sWe"/>
+                                    <constraint firstItem="EuF-Zn-IHv" firstAttribute="trailing" secondItem="gkG-c7-rpv" secondAttribute="trailing" constant="65" id="cAo-gy-HSw"/>
+                                    <constraint firstItem="l5Z-X0-bxe" firstAttribute="leading" secondItem="EuF-Zn-IHv" secondAttribute="leading" constant="65" id="cmz-sQ-MGG"/>
+                                    <constraint firstItem="l22-fM-Dkc" firstAttribute="top" secondItem="EuF-Zn-IHv" secondAttribute="top" constant="320" id="dwd-X4-bv4"/>
+                                    <constraint firstItem="EuF-Zn-IHv" firstAttribute="bottom" secondItem="GQt-cJ-0ey" secondAttribute="bottom" id="eB3-8x-f9F"/>
+                                    <constraint firstItem="gkG-c7-rpv" firstAttribute="top" secondItem="l5Z-X0-bxe" secondAttribute="bottom" constant="65" id="gTC-6A-sjq"/>
+                                    <constraint firstItem="EuF-Zn-IHv" firstAttribute="trailing" secondItem="GQt-cJ-0ey" secondAttribute="trailing" id="hek-iz-N1G"/>
+                                    <constraint firstItem="Xgg-Qz-sPu" firstAttribute="top" secondItem="gkG-c7-rpv" secondAttribute="bottom" constant="18" id="sZS-Ma-jAe"/>
+                                    <constraint firstItem="EuF-Zn-IHv" firstAttribute="trailing" secondItem="Xgg-Qz-sPu" secondAttribute="trailing" constant="65" id="vEV-wI-Bvw"/>
+                                    <constraint firstItem="GQt-cJ-0ey" firstAttribute="top" secondItem="EuF-Zn-IHv" secondAttribute="top" id="zdN-Tg-pbz"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="backgroundImage" destination="GQt-cJ-0ey" id="LYj-HU-Rnf"/>
+                        <outlet property="loginButton" destination="gkG-c7-rpv" id="e0Y-2U-w0a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="77" y="67"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Destaque-Netflix-8-1200x1200" width="1200" height="1200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
