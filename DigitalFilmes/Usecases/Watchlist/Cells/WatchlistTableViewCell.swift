@@ -7,7 +7,7 @@
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
+class WatchlistTableViewCell: UITableViewCell {
 
     @IBOutlet weak var capaDoFilme: UIImageView!
     
