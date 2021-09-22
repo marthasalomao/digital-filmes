@@ -29,6 +29,9 @@
                                         <state key="normal" title="Login">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="q9I-TY-E9L" kind="show" id="gxC-ai-yiC"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xgg-Qz-sPu">
                                         <rect key="frame" x="65" y="600" width="284" height="46"/>
@@ -87,6 +90,16 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="77" y="67"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="GR2-YH-EZY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Home" id="q9I-TY-E9L" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0Ne-I3-Uvr"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r8T-w8-g5o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="604" y="52"/>
         </scene>
     </scenes>
     <resources>
