@@ -10,6 +10,8 @@
 		2F1F835B26F970B8003B5F21 /* Watchlist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1F835A26F970B8003B5F21 /* Watchlist.storyboard */; };
 		2F1F835F26F97ACD003B5F21 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1F835E26F97ACD003B5F21 /* Settings.storyboard */; };
 		2F1F836226F97DE1003B5F21 /* Search.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F1F836126F97DE1003B5F21 /* Search.storyboard */; };
+		2FB8FF7826FCCD320098339F /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8FF7726FCCD320098339F /* Details.swift */; };
+		2FB8FF7E26FCD06D0098339F /* Movies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB8FF7D26FCD06D0098339F /* Movies.swift */; };
 		2FB9C9FB26F9470500BDF579 /* FilmDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB9C9FA26F9470500BDF579 /* FilmDetails.storyboard */; };
 		2FB9C9FF26F948C900BDF579 /* FilmDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB9C9FE26F948C900BDF579 /* FilmDetailsViewController.swift */; };
 		2FB9CA0226F9508800BDF579 /* ChangePassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB9CA0126F9508800BDF579 /* ChangePassword.storyboard */; };
@@ -45,6 +47,8 @@
 		2F1F835A26F970B8003B5F21 /* Watchlist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Watchlist.storyboard; sourceTree = "<group>"; };
 		2F1F835E26F97ACD003B5F21 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		2F1F836126F97DE1003B5F21 /* Search.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Search.storyboard; sourceTree = "<group>"; };
+		2FB8FF7726FCCD320098339F /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
+		2FB8FF7D26FCD06D0098339F /* Movies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movies.swift; sourceTree = "<group>"; };
 		2FB9C9FA26F9470500BDF579 /* FilmDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FilmDetails.storyboard; sourceTree = "<group>"; };
 		2FB9C9FE26F948C900BDF579 /* FilmDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmDetailsViewController.swift; sourceTree = "<group>"; };
 		2FB9CA0126F9508800BDF579 /* ChangePassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChangePassword.storyboard; sourceTree = "<group>"; };
@@ -127,11 +131,28 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
-		2FB9CA0026F94FED00BDF579 /* Details */ = {
+		2FB8FF7926FCCE010098339F /* View */ = {
 			isa = PBXGroup;
 			children = (
 				2FB9C9FA26F9470500BDF579 /* FilmDetails.storyboard */,
 				2FB9C9FE26F948C900BDF579 /* FilmDetailsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FB8FF7A26FCCE0C0098339F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FB8FF7726FCCD320098339F /* Details.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FB9CA0026F94FED00BDF579 /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				2FB8FF7926FCCE010098339F /* View */,
+				2FB8FF7A26FCCE0C0098339F /* Model */,
 			);
 			path = Details;
 			sourceTree = "<group>";
@@ -253,6 +274,7 @@
 		5DFBC23426E04AB7007D374E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2FB8FF7D26FCD06D0098339F /* Movies.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -374,9 +396,11 @@
 				F9B6B30226E162BA00FE1726 /* SettingsViewController.swift in Sources */,
 				5D768B3026DF275000242F8F /* MovieCollectionViewCell.swift in Sources */,
 				2FB9CA0426F950CC00BDF579 /* ChangePasswordViewController.swift in Sources */,
+				2FB8FF7826FCCD320098339F /* Details.swift in Sources */,
 				F9B6B2F826E15BB700FE1726 /* WatchlistTableViewCell.swift in Sources */,
 				5D768B3326DF2F4700242F8F /* GenereTableViewCell.swift in Sources */,
 				5D72FAEC26DABC8D00831BBA /* SceneDelegate.swift in Sources */,
+				2FB8FF7E26FCD06D0098339F /* Movies.swift in Sources */,
 				5D768B2526DDB17100242F8F /* SignUpViewController.swift in Sources */,
 				F9B6B2F026E15B9900FE1726 /* playlistPerfilCell.swift in Sources */,
 				2FB9C9FF26F948C900BDF579 /* FilmDetailsViewController.swift in Sources */,
